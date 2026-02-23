@@ -105,10 +105,7 @@ public class PracticeProblem {
 	System.out.print("Input a word: ");
 	word = input.nextLine();
 
-	System.out.println(word != "banana");
-
-
-
+	System.out.println(!word.equals("banana"));
 
 	}
 
@@ -118,7 +115,31 @@ public class PracticeProblem {
 		Input the user’s response from the keyboard, test the integer to see if it is even or odd (use the modulus operator % to do this), 
 		and then output the result as shown below (several runs are shown): */
 	
+		/*
+		Enter an integer: 28
+
+		The integer 28 is true.
+
+		Enter an integer: 2049
+
+		The integer 2049 is false.
+
+		Enter an integer: -236
+
+		The integer -236 is true. */
+
 	Scanner input = new Scanner(System.in);
+
+	int inte;
+
+	System.out.print("Enter an integer: ");
+	inte = input.nextInt();
+
+	System.out.println("The integer " + inte + " is " + (inte % 2 == 0));
+		//YIPPPEEE!!
+
+
+
 
 
 	}
